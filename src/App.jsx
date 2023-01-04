@@ -11,9 +11,10 @@ import { useEffect, useState } from 'react'
 function App() {
 
   const [items, setItems] = useState([])
+  const [pagina, setPagina] = useState(0)
 
   useEffect(() => {
-    fetch(`https://rickandmortyapi.com/api/character`)
+    fetch(`https://rickandmortyapi.com/api/character/?page=${pagina}`)
       .then(res => {
         return res.json()
       })
@@ -23,7 +24,11 @@ function App() {
       .catch(error => {
         return console.log(error)
       })
-  }, [])
+  }, [pagina])
+
+ function proxima() {
+  setPagina(pagina+1)
+ }
 
 
   return (
@@ -42,10 +47,12 @@ function App() {
           ))}
         </Grid>
        </div>
-
+         
       <div className="container">
       <Botao text="Previous"/>
-      <Botao text="Next"/>
+      <Botao text="Next" 
+      onClick={proxima} 
+      />
       </div>
     </>
   )

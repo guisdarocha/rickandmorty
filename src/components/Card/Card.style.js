@@ -31,6 +31,7 @@ export const CardContent = styled.div`
         font-size: 30px;
         margin-bottom: 15px;
     }
+
     li{
     margin: 7px;
     list-style-type: none;
