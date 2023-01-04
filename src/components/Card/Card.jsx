@@ -1,16 +1,15 @@
 import React from 'react'
 import { CardContent } from './Card.style'
-import foto from '../../assets/357 1.png'
 
 
-const Card = () => {
+const Card = ({image, name, status, species}) => {
     return (
       <CardContent>
-       <img src={foto} alt="" />
+       <img src={image} alt={image} />
        <ul>
-        <li className='nome'>Tommy's Clone</li>
-        <li>Alive</li>
-        <li>Human</li>
+        <li className='nome'>{name}</li>
+        <li>{status}</li>
+        <li>{species}</li>
        </ul>
       </CardContent>
     )

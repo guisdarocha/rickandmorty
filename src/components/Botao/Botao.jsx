@@ -3,10 +3,10 @@ import { BotaoMais } from './Botao.style'
 
 
 
-const Botao = () => {
+const Botao = ({text}) => {
   return (
    <BotaoMais>
-    Mostrar mais
+    {text}
    </BotaoMais>
   )
 }
