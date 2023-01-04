@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const CardContent = styled.div`
     max-width: 293px;
     padding: 0 37px;
-    height: 450px;
+    height: 500px;
     background: #57A347;
     border-radius: 28px;
     text-align: center;

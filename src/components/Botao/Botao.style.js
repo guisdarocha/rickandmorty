@@ -6,13 +6,12 @@ export const BotaoMais = styled.button`
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 15px;
+    line-height: 25px;
 
     color: #FFFFFF;
-    padding: 12px 78px 14px 78px;
+    padding: 12px 39px 14px 39px;
     cursor: pointer;
-    display: block;
-    margin: 0 auto;
     margin-bottom: 24px;
+
 `
