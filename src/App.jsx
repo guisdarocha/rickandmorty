@@ -50,11 +50,15 @@ function App() {
         </Grid>
        </div>
          
-      <div className="container">
-        <BotaoMais onClick={anterior}>
+      <div className="container botao">
+        <BotaoMais onClick={anterior} disabled={
+          pagina > 1 ? false : true
+        }>
           Previous    
         </BotaoMais>
-        <BotaoMais onClick={proxima}>
+        <BotaoMais onClick={proxima} disabled={
+          pagina <= 41 ? false : true
+        }>
           Next    
         </BotaoMais>
       </div>

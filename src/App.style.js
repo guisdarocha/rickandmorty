@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Grid = styled.div`
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     column-gap: 20px;
     row-gap: 40px;
     justify-content: space-between;
@@ -22,5 +22,4 @@ export const BotaoMais = styled.button`
     padding: 12px 39px 14px 39px;
     cursor: pointer;
     margin-bottom: 24px;
-
 `
