@@ -3,3 +3,14 @@
     max-width: 1248px;
     justify-content: space-between;
 }
+
+.botao{
+    display: flex;
+}
+
+
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
