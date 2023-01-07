@@ -8,12 +8,12 @@ export const CardContent = styled.div`
     background: #57A347;
     border-radius: 28px;
     text-align: center;
-    
+
 
     img{
-    margin: 45px 0 15px 0; 
+    margin: 45px 0 15px 0;
     border-radius: 15px;
-    
+
     }
 
     ul{
@@ -30,6 +30,12 @@ export const CardContent = styled.div`
     .nome{
         font-weight: 700;
         font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .grande{
+      font-weight: 700;
+        font-size: 20px;
         margin-bottom: 15px;
     }
 

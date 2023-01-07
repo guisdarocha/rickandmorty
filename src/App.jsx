@@ -18,6 +18,7 @@ function App() {
         return res.json()
       })
       .then(data => {
+        console.log(data)
         return setItems(data.results)
       })
       .catch(error => {
@@ -35,31 +36,31 @@ function App() {
 
   return (
     <>
-    
+
       <Header />
        <div className="container">
         <Grid>
           {items.map((personagem) => (
-            <Card  
+            <Card
               image={personagem.image}
               name={personagem.name}
               status={personagem.status}
               species={personagem.species}
-            /> 
+            />
           ))}
         </Grid>
        </div>
-         
+
       <div className="container botao">
         <BotaoMais onClick={anterior} disabled={
           pagina > 1 ? false : true
         }>
-          Previous    
+          Previous
         </BotaoMais>
         <BotaoMais onClick={proxima} disabled={
           pagina <= 41 ? false : true
         }>
-          Next    
+          Next
         </BotaoMais>
       </div>
     </>
