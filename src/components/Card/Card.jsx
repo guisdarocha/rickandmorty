@@ -15,14 +15,15 @@ const Card = ({image, name, status, species}) => {
       console.log(tamanho)
 
     return (
-      <CardContent>
-       <img src={image} alt={image} />
-       <ul>
-        <li className={classe}>{name}</li>
-        <li>{status}</li>
-        <li>{species}</li>
-       </ul>
-      </CardContent>
+    <CardContent>
+
+            <img src={image} alt={image} />
+            <ul> 
+              <li className={classe}>{name}</li>
+              <li>{status}</li>
+              <li>{species}</li>
+            </ul>
+    </CardContent>
     )
   }
 

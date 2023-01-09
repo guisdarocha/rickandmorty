@@ -1,20 +1,27 @@
 import styled from 'styled-components'
-
+import Aumentar from './Animation.style.js'
 
 export const CardContent = styled.div`
     max-width: 293px;
     padding: 0 37px;
     height: 500px;
     background: #57A347;
-    border-radius: 28px;
     text-align: center;
-
-
+    border-radius: 34px;
+    background: linear-gradient(145deg, #5dae4c, #4e9340);
+    box-shadow:  5px 5px 25px #12112b,
+             -5px -5px 25px #4643ab;
+    
+    :hover {
+    color: #74d95f;
+    box-shadow: 5px 5px 20px #74d95f inset;
+	animation: ${Aumentar} 3s ease-out both;
+    }
+    
     img{
     margin: 45px 0 15px 0;
-    border-radius: 15px;
-
-    }
+    border-radius: 34px;
+     }
 
     ul{
         margin: 0;
@@ -43,5 +50,6 @@ export const CardContent = styled.div`
     margin: 7px;
     list-style-type: none;
     }
+
 
 `

@@ -9,6 +9,7 @@ export const Grid = styled.div`
 
 `
 
+
 export const BotaoMais = styled.button`
     background: #30883E;
     border-radius: 6px;
