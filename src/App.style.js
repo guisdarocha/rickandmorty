@@ -12,13 +12,16 @@ export const Grid = styled.div`
 
 export const BotaoMais = styled.button`
     background: #30883E;
-    border-radius: 6px;
+    border: none;
+    border-radius: 55px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
-
+    box-shadow:  3px 3px 14px #12112b,
+    -3px -3px 14px   #4643ab;
+    
     color: #FFFFFF;
     padding: 12px 39px 14px 39px;
     cursor: pointer;
