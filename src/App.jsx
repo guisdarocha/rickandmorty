@@ -28,10 +28,12 @@ function App() {
 
  function proxima() {
   setPagina(pagina+1)
+  window.scrollTo({top:0, behavior:'smooth'})
  }
 
  function anterior(){
    setPagina(pagina-1)
+   window.scrollTo({top:0, behavior:'smooth'})
  }
 
   return (
